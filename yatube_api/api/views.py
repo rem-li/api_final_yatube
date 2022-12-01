@@ -1,6 +1,6 @@
 from rest_framework import viewsets, filters, mixins
 from django.shortcuts import get_object_or_404
-from posts.models import Post, Group, Follow, User
+from posts.models import Post, Group
 from .serializers import (CommentSerializer, PostSerializer, GroupSerializer,
                           FollowSerializer)
 from .permissions import AuthorOrReadOnly
@@ -9,7 +9,7 @@ from rest_framework.permissions import (IsAuthenticatedOrReadOnly,
 
 
 class CreateListViewSet(mixins.CreateModelMixin, mixins.ListModelMixin,
-                            viewsets.GenericViewSet):
+                        viewsets.GenericViewSet):
     pass
 
 
