@@ -10,7 +10,7 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone 
+git clone https://github.com/rem-li/api_final_yatube.git
 ```
 
 ```
